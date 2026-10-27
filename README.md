@@ -68,7 +68,7 @@ Based on the blueprint's content-governance rules, check these items with the co
 | Production capacities | Product pages, Plants page, Home | Published as stated in `products.docx` / `Plants.docx` |
 | "One of the largest caustic soda & hydrogen peroxide producers in Bangladesh" | Home hero, About, footer | Wording from `Plants.docx` |
 | Labour Rights policy (English) | `policies.html` | English text is a translation of the Bengali original from `Company Policy.docx`. Have HR review the translation |
-| Policy manual PDF | `policies.html` (download) | The full 81-page 2020 PDF is published for download. Confirm it is approved for public release, or remove `site/assets/docs/` and the download card |
+| Policy manual PDF | `policies.html` (download) | **Approved** for public download (27 Oct 2026). The full 81-page 2020 PDF is published |
 | Mission, vision and values | About | Draft wording. Needs approval |
 | Quality, safety and sustainability statements | Quality and Manufacturing pages | Kept general, with no certifications or figures. Add verified certificates (name, scope, issuer, validity) |
 | Privacy Policy | `privacy.html` | Template. Needs legal review |
