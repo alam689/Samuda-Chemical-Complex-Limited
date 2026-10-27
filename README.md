@@ -33,6 +33,14 @@ Then open http://localhost:8090. Edit files in `src/` (or `site/assets/`) and ru
 
 Home, About, Products (catalogue + 18 product pages), **Our Plants**, Industries, Manufacturing, Quality & Sustainability, **Company Policies**, Global Reach, News, Careers, Contact, Privacy.
 
+## Deployment (GitHub Pages)
+
+Live site: https://alam689.github.io/Samuda-Chemical-Complex-Limited/
+
+Every push to `main` runs `.github/workflows/deploy-pages.yml`, which runs `python build.py` and publishes `site/` to the `gh-pages` branch. GitHub Pages serves that branch. To update the live site, edit the files and push to `main`. The site is live about a minute later.
+
+The raw input files (Word docs, the original PDF, the mock-up and the source photos) are kept out of the repository by `.gitignore`.
+
 ## Adding or editing products
 
 Edit `src/data/products.json` and rebuild. Required fields: `slug`, `name`, `formula`, `category` (`basic`, `performance` or `calcium`), `chemical`, `form`, `short`, `overview` (list of paragraphs) and `industries`. Optional fields add sections to the product page: `image` (file name in `site/assets/img/products/`, without `.webp`), `features`, `properties` (key/value rows), `tables` (titled spec tables), `dosage`, `usage`, `applications`, `capacity`, `capacityShort`, `packaging`, `technology` and `storage`. The catalogue, mega-menu, quote-form product list, industry pages, sitemap and detail pages all update automatically.
