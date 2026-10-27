@@ -64,7 +64,7 @@
   }
   if (toggle && drawer) {
     toggle.addEventListener("click", function () { toggleMenu(); });
-    window.addEventListener("resize", function () { if (window.innerWidth > 980 && doc.classList.contains("menu-open")) toggleMenu(false); });
+    window.addEventListener("resize", function () { if (window.innerWidth > 1100 && doc.classList.contains("menu-open")) toggleMenu(false); });
   }
 
   /* ---------------- reveal on scroll ---------------- */
