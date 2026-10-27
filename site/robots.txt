@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.scclbd.com/sitemap.xml

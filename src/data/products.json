@@ -1,0 +1,489 @@
+{
+  "categories": [
+    {
+      "slug": "basic",
+      "name": "Basic Chemicals",
+      "short": "Chlor-alkali and peroxide chemicals produced at scale in our Gazaria complex, from caustic soda to hydrogen peroxide.",
+      "icon": "flask"
+    },
+    {
+      "slug": "performance",
+      "name": "Performance Chemicals",
+      "short": "Samuda's own branded textile auxiliaries — softeners, wetting agents, stabilizers and more for pretreatment, dyeing and finishing.",
+      "icon": "thread"
+    },
+    {
+      "slug": "calcium",
+      "name": "Calcium Carbonate",
+      "short": "Coated and uncoated calcium carbonate and ready-to-use filler compounds for plastics, paper, paints and construction.",
+      "icon": "hex"
+    }
+  ],
+  "industries": {
+    "textile": "Textile & Garments",
+    "paper": "Paper & Pulp",
+    "water": "Water Treatment",
+    "other": "Other Manufacturing"
+  },
+  "products": [
+    {
+      "slug": "caustic-soda",
+      "name": "Caustic Soda",
+      "formula": "NaOH",
+      "category": "basic",
+      "chemical": "Sodium hydroxide",
+      "form": "Liquid & Flakes",
+      "image": "caustic-soda",
+      "short": "High-purity sodium hydroxide in 45% liquid and 98–99% flake form, made by ion-exchange membrane electrolysis.",
+      "overview": [
+        "Caustic soda is produced in Samuda's chlor-alkali plant using ion-exchange membrane technology, which delivers superior product quality with low energy consumption.",
+        "It is available as a 45% liquid delivered by tank lorry, and as 98–99% flakes packed in airtight poly-woven bags."
+      ],
+      "capacity": "Liquid: 60–100 MT/day · Flakes: 150–170 MT/day",
+      "capacityShort": "Up to 170 MT/day",
+      "packaging": "Liquid by tank lorry; flakes in 25 kg and 50 kg airtight poly-woven bags",
+      "technology": ["AKCC (Japan)", "Bertram (Switzerland)", "Nuberg Engineering (India)"],
+      "storage": "Long shelf life when kept away from air and contamination.",
+      "tables": [
+        {
+          "title": "Chemical composition",
+          "head": ["Component", "Unit", "Liquid", "Flakes"],
+          "rows": [
+            ["NaOH", "% w/w", "45", "98–99"],
+            ["Na₂CO₃", "% w/w", "—", "0.3 max"],
+            ["NaCl", "ppm", "60 max", "160 max"],
+            ["NaClO₃", "ppm", "35 max", "—"],
+            ["Ni", "ppm", "1 max", "5 max"],
+            ["Fe₂O₃", "ppm", "—", "15 max"]
+          ]
+        },
+        {
+          "title": "Physical characteristics",
+          "head": ["Property", "Unit", "Liquid", "Flakes"],
+          "rows": [
+            ["Color", "—", "Colorless", "White"],
+            ["Odor", "—", "Odorless", "Odorless"],
+            ["Density", "g/cc", "1.53", "—"],
+            ["Bulk density", "t/m³", "—", "0.7–0.9"],
+            ["Thickness", "mm", "—", "0.8–1.2"],
+            ["Average size", "cm²", "—", "0.3–1.0"]
+          ]
+        }
+      ],
+      "applications": ["Dyes and pigments", "Scouring, bleaching and mercerizing", "Rayon, pulp and paper production", "Water treatment plants", "Soap, detergents and surfactants", "Soil drilling projects", "Agricultural chemicals", "Effluent treatment plants", "Pharmaceutical manufacturing", "Laboratory analysis", "Oil and petroleum refining", "Food processing"],
+      "industries": ["textile", "paper", "water", "other"]
+    },
+    {
+      "slug": "hydrogen-peroxide",
+      "name": "Hydrogen Peroxide",
+      "formula": "H₂O₂",
+      "category": "basic",
+      "chemical": "Hydrogen peroxide (technical grade)",
+      "form": "Liquid",
+      "image": "hydrogen-peroxide",
+      "short": "Technical-grade hydrogen peroxide in 35%, 50% and 60% concentrations — the most economical grade for industrial use.",
+      "overview": [
+        "Samuda technical-grade hydrogen peroxide is usually the most economical grade for industrial applications in which inorganic stabilizers are accepted.",
+        "It is a clear, colorless, slightly viscous liquid, miscible with water in all proportions. It decomposes to water and oxygen with no toxic residues; decomposition is normally slow (below 1% per year) but is accelerated by heat and by catalysts such as transition metals, strong acids and strong alkalis."
+      ],
+      "capacity": "170–250 MT/day (5,100–7,500 MT/month)",
+      "capacityShort": "Up to 250 MT/day",
+      "packaging": "25 kg jars and ISO tanks",
+      "tables": [
+        {
+          "title": "Typical analysis",
+          "head": ["Parameter", "35%", "50%", "60%"],
+          "rows": [
+            ["Concentration in water, % w/w", "35.0–36.0", "50.0–51.0", "60.0–61.0"],
+            ["Apparent pH", "1.7–3.7", "1.0–3.0", "−0.5 – 1.6"],
+            ["Appearance", "Clear, colorless", "Clear, colorless", "Clear, colorless"],
+            ["Specific gravity", "1.127", "1.195", "1.235"]
+          ]
+        }
+      ],
+      "applications": ["Bleaching chemical and mechanical pulp", "Wastepaper recycling", "Bleaching natural and synthetic fibers", "Desizing in textile processing", "Detoxifying phenolics and reduced sulfur compounds", "Extraction and finishing of metals"],
+      "industries": ["textile", "paper", "water", "other"]
+    },
+    {
+      "slug": "liquid-chlorine",
+      "name": "Liquid Chlorine",
+      "formula": "Cl₂",
+      "category": "basic",
+      "chemical": "Chlorine",
+      "form": "Liquefied gas",
+      "image": "liquid-chlorine",
+      "short": "99.5% pure liquid chlorine supplied in 100 kg, 930 kg and 1,000 kg cylinders.",
+      "overview": [
+        "Liquid chlorine is a co-product of Samuda's chlor-alkali process. It appears as a yellowish-green gas or amber liquid and is supplied in pressure cylinders for disinfection and chemical manufacturing."
+      ],
+      "capacity": "15–20 MT/day",
+      "capacityShort": "15–20 MT/day",
+      "packaging": "Cylinders of 1,000 kg, 930 kg and 100 kg",
+      "technology": ["Sury Pumps & Equipment Co. (India)", "Kirloskar Pneumatic Co. Ltd. (India)", "Nuberg Engineering (India)"],
+      "tables": [
+        {
+          "title": "Chemical composition",
+          "head": ["Component", "Unit", "Specification"],
+          "rows": [
+            ["Purity (Cl₂)", "% w/w", "99.5"],
+            ["Oxygen (O₂)", "% w/w", "0.05"],
+            ["Moisture", "% w/w", "0.001"]
+          ]
+        }
+      ],
+      "applications": ["Disinfection in water purification", "Sterilizing service water, drainage and swimming pools", "Domestic and industrial bleaching agents", "Manufacture of other bleaches", "Manufacture of HCl", "Chloromethanes and dichloroethane", "PVC intermediates and vinyl chloride", "Chlorates and organo-chloro compounds"],
+      "industries": ["water", "other"]
+    },
+    {
+      "slug": "hydrochloric-acid",
+      "name": "Hydrochloric Acid",
+      "formula": "HCl",
+      "category": "basic",
+      "chemical": "Hydrogen chloride solution",
+      "form": "Liquid",
+      "short": "32% minimum hydrochloric acid for metal treatment, water treatment and chemical manufacturing.",
+      "overview": [
+        "Hydrochloric acid is a clear, colorless to slightly yellowish liquid with a pungent odor. Samuda supplies it at a minimum purity of 32% w/w with very low free chlorine."
+      ],
+      "capacity": "150–180 MT/day",
+      "capacityShort": "Up to 180 MT/day",
+      "packaging": "Rubber-lined tank lorry or plastic tank",
+      "storage": "Rubber-lined tanks, plastic, FRP or PVC vessels and containers.",
+      "technology": ["Carbone Lorraine (France)", "Nuberg Engineering (India)"],
+      "tables": [
+        {
+          "title": "Chemical composition",
+          "head": ["Component", "Unit", "Specification"],
+          "rows": [
+            ["Purity", "% w/w", "32 min"],
+            ["Free Cl₂", "ppm", "1 max"]
+          ]
+        },
+        {
+          "title": "Properties",
+          "head": ["Property", "Specification"],
+          "rows": [
+            ["Molecular weight", "36.46 g/mol"],
+            ["Solubility", "82.3 g/100 g at 32 °F"],
+            ["Density", "1.05 at 59 °F (10.17% w/w solution)"],
+            ["Color", "Clear, colorless or slightly yellowish"],
+            ["Odor", "Pungent, irritating"],
+            ["Corrosivity", "Corrosive"]
+          ]
+        }
+      ],
+      "applications": ["Iron and steel manufacturing, electroplating", "Metal cleaning and oxide removal", "Welding and soldering", "Water and effluent treatment", "Pickling and cleaning", "Dyestuff, casein, pharmaceuticals and synthetic rubber", "Solvent and pH regulation", "Bone processing and gelatin manufacture", "Printed circuit board manufacture"],
+      "industries": ["water", "other"]
+    },
+    {
+      "slug": "sodium-hypochlorite",
+      "name": "Sodium Hypochlorite",
+      "formula": "NaOCl",
+      "category": "basic",
+      "chemical": "Sodium hypochlorite",
+      "form": "Liquid",
+      "short": "Clear to greenish-yellow bleach and disinfectant with 4–12.5% available chlorine.",
+      "overview": [
+        "Sodium hypochlorite is a versatile bleaching and disinfecting agent used from textile mills to water-treatment plants, laundries and households."
+      ],
+      "capacity": "20–30 MT/day (600–900 MT/month)",
+      "capacityShort": "Up to 30 MT/day",
+      "packaging": "Plastic or HDPE containers, or rubber-lined vessels by truck or lorry",
+      "storage": "Rubber-lined vessels or HDPE containers.",
+      "technology": ["Nuberg Engineering (India)"],
+      "tables": [
+        {
+          "title": "Chemical composition",
+          "head": ["Component", "Unit", "Specification"],
+          "rows": [
+            ["Available chlorine", "% w/w", "4–12.5"],
+            ["Free NaOH", "% w/w", "0.5"],
+            ["Sodium chlorate", "ppm", "Traces"],
+            ["Specific gravity", "—", "1.07–1.12"],
+            ["Solubility in water", "—", "Soluble"],
+            ["Color", "—", "Clear or greenish-yellow liquid"],
+            ["Odor", "—", "Bleach odor"]
+          ]
+        }
+      ],
+      "applications": ["Textile industries", "Pulp and paper industries", "Soap and oil industries", "Petroleum and refineries", "Food processing", "Water-treatment disinfection", "Laundries, hotels and household cleaning"],
+      "industries": ["textile", "paper", "water", "other"]
+    },
+    {
+      "slug": "chlorinated-paraffin-wax",
+      "name": "Chlorinated Paraffin Wax",
+      "formula": "CPW",
+      "category": "basic",
+      "chemical": "Chloro-alkane",
+      "form": "Dense liquid",
+      "short": "45–55% chlorine CPW used as a plasticizer and flame retardant in PVC, rubber and coatings.",
+      "overview": [
+        "Chlorinated paraffin wax is a dense, colorless to straw-yellow liquid used as a plasticizer and flame-retardant additive."
+      ],
+      "capacity": "20 MT/day",
+      "capacityShort": "20 MT/day",
+      "packaging": "200 kg plastic drums",
+      "technology": ["Nuberg Engineering (India)"],
+      "tables": [
+        {
+          "title": "Chemical composition",
+          "head": ["Component", "Unit", "Specification"],
+          "rows": [
+            ["Chlorine content", "% w/w", "45–55"],
+            ["Free acid (mineral) as KOH", "mg/g", "0.1"],
+            ["Color", "Hazen", "50–125"],
+            ["Volatile loss", "% w/w", "0.6"],
+            ["Relative density", "—", "1.26–1.28"],
+            ["Thermal stability index, as HCl", "% w/w", "0.15"]
+          ]
+        }
+      ],
+      "applications": ["Plasticizer in chlorinated rubber and PVC", "Flame retardant in plastics and textiles", "Bituminous coatings and sealants"],
+      "industries": ["textile", "other"]
+    },
+    {
+      "slug": "samneu-can",
+      "name": "SAMNEU CAN",
+      "formula": "Nu",
+      "category": "performance",
+      "chemical": "Core alkaline neutralizer",
+      "form": "Liquid",
+      "short": "An eco-friendly core neutralization acid that holds fabric pH and prevents alkali reversion.",
+      "overview": [
+        "SAMNEU CAN® is an excellent core neutralization acid, free of any mineral or inorganic acid or acid-liberating compounds. It is developed specially for the proper neutralization of textiles after alkaline pretreatment, dyeing and reduction cleaning.",
+        "It maintains fabric pH during storage and prevents the fabric from returning to an alkaline condition."
+      ],
+      "features": ["100% eco-friendly and economical", "Sulphate, chloride and formate free", "Safe in all stages of textile processing", "Compatible with enzymes", "Non-volatile acetic acid substitute during optical brightening of polyester", "Does not affect handle or tone of dyed and printed fabrics", "Neutralizes alkali entrapped after mercerization", "Prevents yellowing of cotton during drying or stentering"],
+      "properties": [["Physical form", "Clear, colorless liquid"], ["Chemical composition", "Mixture of organic acid compounds"], ["Ionic nature", "Acidic"], ["pH (5%)", "2.5 ± 1"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.05 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with polyester dye-bath additives and finishing auxiliaries where acidic pH is maintained"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "usage": ["SAMNEU CAN® dilutes readily with cold or warm water to form colorless solutions.", "The exact amount depends on the required final pH, residual alkalinity, washing range, fabric quality and the quality of the process water."],
+      "capacity": "400–600 MT/month",
+      "capacityShort": "Up to 600 MT/month",
+      "packaging": "25 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samsof-pss",
+      "name": "SAMSOF PSS",
+      "formula": "Sp",
+      "category": "performance",
+      "chemical": "Hydrophobic silicone softener",
+      "form": "Liquid",
+      "image": "samsof-pss",
+      "short": "A micro-silicone emulsion for a durable, soft, silky and luxurious finish on cotton and blends.",
+      "overview": [
+        "SAMSOF PSS® is a micro-silicone emulsion developed by modifying polydimethylsiloxane, imparting a durable, soft, smooth and silky finish to cotton and its blends. It suits all standard finishing processes and provides a luxurious feel on a wide range of fabrics."
+      ],
+      "features": ["Ideal for CO, PC, PES, CV and other synthetic fibers and blends", "Durable through multiple washes with a pleasant smoothness", "Suitable for white goods; retains brightness of colored fabrics and yarns", "Improves crease recovery, tear and abrasion resistance in resin finishing"],
+      "properties": [["Physical form", "Clear, colorless liquid"], ["Chemical composition", "Polydimethylsiloxane derivative"], ["Ionic nature", "Nonionic"], ["pH (5%)", "5–7"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.0 ± 0.01 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with anionic and cationic products"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Exhaustion", "2–4% o.w.f.", "15–20 min at 30–35 °C"], ["Padding", "5–20 g/l", "at 80% expression"]],
+      "usage": ["Can be applied by exhaustion or padding. A hydrophilic cationic non-silicone softener can be blended in for a synergistic effect."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samsof-hss",
+      "name": "SAMSOF HSS",
+      "formula": "Sh",
+      "category": "performance",
+      "chemical": "Hydrophilic silicone softener",
+      "form": "Liquid",
+      "image": "samsof-hss",
+      "short": "A hydrophilic silicone softener for terry towels, knits and garments — soft, silky and absorbent.",
+      "overview": [
+        "SAMSOF HSS® is a hydrophilic silicone softener developed by modifying polysiloxane, imparting a durable, soft, smooth, silky and hydrophilic finish to cotton and its blends.",
+        "It is ideal for terry towels, knits and garment finishing, improves crease resistance and sewability, and is suitable for resin baths in wash-and-wear applications."
+      ],
+      "features": ["High water retention on cotton knits and terry towels", "Durable through multiple washes with a pleasant smoothness", "Suitable for white goods; retains brightness of colored fabrics and yarns", "Improves crease recovery, tear and abrasion resistance in resin finishing"],
+      "properties": [["Physical form", "Clear, translucent liquid"], ["Chemical composition", "Polysiloxane derivative"], ["Ionic nature", "Nonionic"], ["pH (5%)", "5 ± 1"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.0 ± 0.01 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with nonionic and cationic products; check compatibility with anionic products before use"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Exhaustion", "2–4% o.w.f.", "15–20 min at 30–35 °C"], ["Padding", "5–20 g/l", "at 80% expression"]],
+      "usage": ["Can be applied by exhaustion or padding. A hydrophilic cationic non-silicone softener can be blended in for a synergistic effect."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samsof-hws",
+      "name": "SAMSOF HWS",
+      "formula": "Sw",
+      "category": "performance",
+      "chemical": "Nonionic softener",
+      "form": "Flakes",
+      "short": "Hot-water-dispersible nonionic softener flakes for an excellent soft hand on all fiber types.",
+      "overview": [
+        "SAMSOF HWS® is a hot-water-dispersible nonionic softener in free-flowing granular form. It disperses easily, deposits uniformly on cotton, polyester and blends, and gives an excellent soft hand and surface smoothness without impairing the tone of dyed fabrics."
+      ],
+      "features": ["Applicable to all fiber types", "Disperses with minimal stirring", "Very fine particle size for uniform deposition", "Significantly improves sewability of knitted goods", "Suitable for white fabrics"],
+      "properties": [["Physical form", "Creamy white flakes"], ["Chemical composition", "Fatty acid derivatives"], ["Ionic nature", "Nonionic"], ["pH (5%)", "5 ± 1"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.0 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Exhaustion", "2–3% o.w.f.", "of a 10% dispersion"], ["Padding", "10–30 g/l", "of a 10% dispersion at 80–85% expression"]],
+      "usage": ["Prepare a 10% dispersion of the product before use."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "25 kg bags",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samsof-cat",
+      "name": "SAMSOF CAT",
+      "formula": "Sc",
+      "category": "performance",
+      "chemical": "Cationic softener",
+      "form": "Flakes",
+      "image": "samsof-cat",
+      "short": "Highly cationic softener flakes giving a soft, smooth hand on cotton, polyester and blends.",
+      "overview": [
+        "SAMSOF CAT® is a hot-water-dispersible cationic softener in free-flowing granular form with high cationic charge. It deposits uniformly on cotton, polyester and blends, giving an excellent soft hand and smoothness without impairing the tone of dyed fabrics."
+      ],
+      "features": ["Disperses with minimal stirring", "Very fine particle size for uniform deposition", "Significantly improves sewability of knitted goods", "Suitable for white fabrics"],
+      "properties": [["Physical form", "Creamy white flakes"], ["Chemical composition", "Fatty acid derivatives"], ["Ionic nature", "Cationic"], ["pH (5%)", "3 ± 1"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.0 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with nonionic, amphoteric and cationic products"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Exhaustion", "2–3% o.w.f.", "of a 10% dispersion"], ["Padding", "10–30 g/l", "of a 10% dispersion at 80–85% expression"]],
+      "usage": ["Prepare a 10% dispersion of the product before use."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "25 kg bags",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samper-stb",
+      "name": "SAMPER STB",
+      "formula": "St",
+      "category": "performance",
+      "chemical": "Peroxide stabilizer",
+      "form": "Liquid",
+      "image": "samper-stb",
+      "short": "Silicate-free peroxide stabilizer for high-alkali bleaching in batch and continuous processes.",
+      "overview": [
+        "SAMPER STB® is a peroxide stabilizer for continuous and batch operations in high-alkali bleaching baths. It forms strong, highly stable complexes with iron, nickel, cobalt and other transition metals so they cannot degrade peroxide, and promotes stabilization of active oxygen."
+      ],
+      "features": ["Silicate-free, multi-functional product", "High caustic and high temperature stability", "Efficient stabilization at low concentration", "Non-foaming, gives even, good whiteness"],
+      "properties": [["Physical form", "Clear, light yellow liquid"], ["Chemical composition", "Mixture of organic and inorganic compounds"], ["Ionic nature", "Anionic"], ["pH (5%)", "5 ± 1"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.11 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with all detergents, scouring agents and oxidizing agents"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Batch", "0.5–1 g/l", ""], ["Semi-continuous", "2–8 g/l", ""], ["Continuous", "2–8 g/l", ""]],
+      "usage": ["Mixes with cold and warm water in any ratio."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samcre-pam",
+      "name": "SAMCRE PAM",
+      "formula": "Cp",
+      "category": "performance",
+      "chemical": "Anti-creasing agent",
+      "form": "Liquid",
+      "short": "Anti-creasing and lubricating agent that prevents crease marks in all wet processes and machines.",
+      "overview": [
+        "SAMCRE PAM® is a general-purpose anti-creasing and lubricating agent that reduces friction between fiber and fiber, fabric and fabric, and fabric and metal. It reduces defects such as crow's feet and abrasion marks.",
+        "Its non-foaming gliding character minimizes crease formation in dyeing acrylic, wool and wool/polyamide blends, silk and cellulosic knit goods."
+      ],
+      "features": ["Improves running properties", "Protects fabric surfaces and improves dimensional stability", "No tonal variation; improves wet fastness of dyeing and printing", "Suitable for high-temperature operation"],
+      "properties": [["Physical form", "Clear, colorless viscous liquid"], ["Chemical composition", "High molecular weight polymer"], ["Ionic nature", "Nonionic"], ["pH (5%)", "7 ± 1"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.01 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Stable to acids, alkalis and salts used in dyeing, and up to 130 °C in polyester/cotton dyeing. Frost changes are reversible on warming and stirring"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Batch", "1–2 g/l", ""]],
+      "usage": ["Suitable for all major pretreatment, dyeing and finishing processes, on all types of fabrics and machines."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samseq-usa",
+      "name": "SAMSEQ USA",
+      "formula": "Sq",
+      "category": "performance",
+      "chemical": "Sequestering agent",
+      "form": "Liquid",
+      "short": "Universal sequestering agent that prevents catalytic damage and iron pinholes and boosts whiteness.",
+      "overview": [
+        "SAMSEQ USA® is a universal sequestering agent with high complex-forming capability for both alkaline-earth and transition metals, giving enhanced peroxide stability.",
+        "It is developed especially to prevent catalytic damage and iron pinholes, and is useful in all stages of pretreatment."
+      ],
+      "features": ["Outstanding complex-forming and anti-redeposition properties", "Prevents the disturbing effect of calcium and magnesium ions during dyeing", "Disperses oxidized dyes and improves levelling and fastness", "Substantially increases whiteness after peroxide bleaching", "Good compatibility with dyes"],
+      "properties": [["Physical form", "Clear, yellow to amber liquid"], ["Chemical composition", "Phosphonic acid derivatives"], ["Ionic nature", "Anionic"], ["pH (5%)", "6–7"], ["Foaming", "Non-foaming"], ["Density (20 °C)", "1.14 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Stable to acid, alkali, hard water and reducing and oxidizing agents at usual concentrations"], ["Shelf life", "At least one year in a dry, cool place in a sealed container"]],
+      "dosage": [["Batch", "0.5–1 g/l", ""], ["Semi-continuous", "2–8 g/l", ""], ["Continuous", "2–8 g/l", ""]],
+      "usage": ["Can be used in any step of pretreatment, bleaching and dyeing of cotton."],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samwet-bln",
+      "name": "SAMWET BLN",
+      "formula": "Wn",
+      "category": "performance",
+      "chemical": "Detergent & wetting agent",
+      "form": "Liquid",
+      "image": "samwet-bln",
+      "short": "Biodegradable, low-foaming wetting and scouring agent for outstanding hydrophilicity.",
+      "overview": [
+        "SAMWET BLN® is a biodegradable, low-foaming wetting and scouring agent. Its emulsifying and detergency properties make it versatile for scouring and wetting, efficiently removing waxes, oils, grease, dirt and most stains from cotton and blends and making textiles hydrophilic."
+      ],
+      "features": ["Environment friendly", "Very low foaming — suitable for high-turbulence machines", "Outstanding hydrophilicity on treated fabrics", "Increases absorbency and whiteness in peroxide bleaching and pretreatment baths"],
+      "properties": [["Physical form", "Clear, colorless liquid"], ["Chemical composition", "Fatty alcohol ethoxylates"], ["Ionic nature", "Nonionic"], ["pH (5%)", "6 ± 1"], ["Foaming", "Low-foaming"], ["Density (20 °C)", "1.05 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with bleaching agents"], ["Shelf life", "At least two years in a dry, cool place in a sealed container"]],
+      "dosage": [["Batch", "0.5–1 g/l", ""]],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "samwet-blf",
+      "name": "SAMWET BLF",
+      "formula": "Wf",
+      "category": "performance",
+      "chemical": "Detergent & wetting agent",
+      "form": "Liquid",
+      "image": "samwet-blf",
+      "short": "Modified low-foaming wetting and scouring agent for batch, semi-continuous and continuous ranges.",
+      "overview": [
+        "SAMWET BLF® is a biodegradable, low-foaming wetting and scouring agent based on modified fatty alcohol ethoxylates. It efficiently removes waxes, oils, grease, dirt and most stains from cotton and blends and makes textiles hydrophilic."
+      ],
+      "features": ["Environment friendly", "Very low foaming — suitable for high-turbulence machines", "Outstanding hydrophilicity on treated fabrics", "Increases absorbency and whiteness in peroxide bleaching and pretreatment baths"],
+      "properties": [["Physical form", "Clear, colorless liquid"], ["Chemical composition", "Modified fatty alcohol ethoxylates"], ["Ionic nature", "Nonionic"], ["pH (5%)", "6 ± 1"], ["Foaming", "Low-foaming"], ["Density (20 °C)", "1.05 ± 0.02 g/ml"], ["Solubility", "Easily soluble in hot and cold water"], ["Stability", "Compatible with bleaching agents"], ["Shelf life", "At least two years in a dry, cool place in a sealed container"]],
+      "dosage": [["Batch", "0.5–1 g/l", ""], ["Semi-continuous", "2–8 g/l", ""], ["Continuous", "2–8 g/l", ""]],
+      "capacity": "150–200 MT/month",
+      "capacityShort": "Up to 200 MT/month",
+      "packaging": "60 kg closed-mouth plastic drums",
+      "industries": ["textile"]
+    },
+    {
+      "slug": "calcium-carbonate-filler",
+      "name": "Calcium Carbonate Filler Compound",
+      "formula": "CaCO₃",
+      "category": "calcium",
+      "chemical": "CaCO₃ with resin and additives",
+      "form": "Solid granules",
+      "image": "calcium-carbonate-filler",
+      "short": "A high-loading CaCO₃ filler masterbatch for PP and LLDPE that lowers cost and improves surface finish.",
+      "overview": [
+        "Samuda filler compound combines calcium carbonate with resin and additives for polymer processing. It offers a high dosing rate, smooth surface, low moisture and good printability — helping processors save production cost."
+      ],
+      "features": ["High dosing rate", "Smooth surface finish", "Low moisture content", "Good printability", "Lower production cost"],
+      "properties": [["Base polymer", "PP injection molding / LLDPE"], ["MFI (190 °C, 2.16 kg)", "3–3.5 g / 10 min"], ["Bulk density", "0.85 ± 0.05 (tested 0.835)"], ["Moisture content", "0.05% max (tested 0.022%)"], ["Heat stability", "Above 220–290 °C"], ["Recommended addition", "5–40%"]],
+      "capacity": "700–900 MT/month",
+      "capacityShort": "Up to 900 MT/month",
+      "packaging": "25 kg bags",
+      "applications": ["PP woven and non-woven bags", "Jumbo bags", "Household furniture", "Disposable plates, cups and spoons", "Plastic chairs, bottle caps, bags and baskets", "Electronic housings", "Blown film", "Blow and injection molding"],
+      "industries": ["other"]
+    },
+    {
+      "slug": "calcium-carbonate",
+      "name": "Calcium Carbonate",
+      "formula": "CaCO₃",
+      "category": "calcium",
+      "chemical": "Calcium carbonate (coated & uncoated)",
+      "form": "Solid powder",
+      "image": "calcium-carbonate",
+      "short": "Coated and uncoated calcium carbonate powder for construction, paper, polymers, paints and more.",
+      "overview": [
+        "Samuda produces both uncoated and coated calcium carbonate powder at its dedicated plant, serving a wide range of industries that need a consistent, cost-effective mineral filler."
+      ],
+      "capacity": "Uncoated: 3,500–4,000 MT/month · Coated: 1,000–1,500 MT/month",
+      "capacityShort": "Up to 5,500 MT/month",
+      "applications": ["Construction", "Oil industries", "Paper industries", "Polymer industries", "Paint industries", "Food processing", "Pharmaceuticals", "Adhesives", "Blackboard chalk"],
+      "industries": ["paper", "other"]
+    }
+  ]
+}

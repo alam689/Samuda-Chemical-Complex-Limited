@@ -1,0 +1,242 @@
+<!--
+title: Home
+description: Samuda Chemical Complex Limited (SCCL) manufactures industrial chemicals, textile auxiliaries, specialty and water-treatment chemicals in Bangladesh. Explore products and request a quote.
+nav: home
+-->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media">
+    <img src="assets/img/aerial-1920.webp" srcset="assets/img/aerial-800.webp 800w, assets/img/aerial-1920.webp 1920w" sizes="100vw" alt="Aerial view of a chemical manufacturing plant with storage tanks and pipe racks" fetchpriority="high">
+  </div>
+  <svg class="hero__lines" viewBox="0 0 600 500" aria-hidden="true">
+    <path d="M40 420 C 160 300, 220 380, 320 250 S 480 120, 580 60"/>
+    <path d="M0 300 C 120 260, 200 160, 330 180 S 520 260, 600 200"/>
+    <circle cx="320" cy="250" r="34"/><circle cx="330" cy="180" r="70"/>
+    <circle class="node" cx="320" cy="250" r="4"/><circle class="node" cx="580" cy="60" r="3"/><circle class="node" cx="160" cy="327" r="3"/>
+  </svg>
+
+  <div class="container hero__content">
+    <p class="eyebrow eyebrow--light reveal">Samuda Chemical Complex Limited</p>
+    <h1 class="hero__title reveal-words" id="hero-title">Chemistry that powers <em>Bangladesh&rsquo;s</em> industry.</h1>
+    <p class="hero__lead reveal" style="--d:200ms">One of the largest caustic soda and hydrogen peroxide producers in Bangladesh — making the basic chemicals, textile auxiliaries and calcium carbonate that keep mills, factories and treatment plants running.</p>
+    <div class="hero__actions reveal" style="--d:320ms">
+      <a class="btn btn--primary" href="products.html">Explore Products {{icon:arrow}}</a>
+      <a class="btn btn--ghost" href="about.html">About Samuda</a>
+    </div>
+  </div>
+
+  <div class="hero__facts">
+    <div class="container">
+      <ul>
+        <li>{{icon:flask}}<div><strong>Chlor-Alkali Leader</strong><span>Ion-exchange membrane technology</span></div></li>
+        <li>{{icon:factory}}<div><strong>Integrated Complex</strong><span>Four plants at Gazaria, Munshiganj</span></div></li>
+        <li>{{icon:spark}}<div><strong>28.19 MW Captive Power</strong><span>Uninterrupted production</span></div></li>
+        <li>{{icon:globe}}<div><strong>Export Ready</strong><span>Serving customers at home and abroad</span></div></li>
+      </ul>
+    </div>
+  </div>
+  <span class="scroll-cue" aria-hidden="true">Scroll</span>
+</section>
+
+<section class="section" aria-labelledby="intro-title">
+  <div class="container">
+    <div class="intro">
+      <p class="eyebrow">Who we are</p>
+      <h2 class="statement reveal-words" id="intro-title">Since 2006, Samuda has been building the chemistry behind everyday products — <em>reliable</em> supply, consistent quality, and partners who understand your process.</h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><span class="stat__num">2006</span><span class="stat__label">Year established</span></div>
+      <div class="stat reveal" style="--d:100ms"><span class="stat__num"><span data-count="250">250</span><sup>MT</sup></span><span class="stat__label">Hydrogen peroxide per day</span></div>
+      <div class="stat reveal" style="--d:200ms"><span class="stat__num"><span data-count="170">170</span><sup>MT</sup></span><span class="stat__label">Caustic soda flakes per day</span></div>
+      <div class="stat reveal" style="--d:300ms"><span class="stat__num"><span data-count="30">30</span><sup>+</sup></span><span class="stat__label">Export countries reached</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item"><i>H₂O₂</i> Hydrogen Peroxide</span>
+    <span class="marquee__item"><i>NaOH</i> Caustic Soda</span>
+    <span class="marquee__item"><i>Cl₂</i> Liquid Chlorine</span>
+    <span class="marquee__item"><i>HCl</i> Hydrochloric Acid</span>
+    <span class="marquee__item"><i>NaOCl</i> Sodium Hypochlorite</span>
+    <span class="marquee__item"><i>CaCO₃</i> Calcium Carbonate</span>
+    <span class="marquee__item"><i>CPW</i> Chlorinated Paraffin Wax</span>
+    <span class="marquee__item"><i>Sp</i> SAMSOF PSS</span>
+    <span class="marquee__item"><i>St</i> SAMPER STB</span>
+    <span class="marquee__item"><i>Wf</i> SAMWET BLF</span>
+    <span class="marquee__item"><i>H₂O₂</i> Hydrogen Peroxide</span>
+    <span class="marquee__item"><i>NaOH</i> Caustic Soda</span>
+    <span class="marquee__item"><i>Cl₂</i> Liquid Chlorine</span>
+    <span class="marquee__item"><i>HCl</i> Hydrochloric Acid</span>
+    <span class="marquee__item"><i>NaOCl</i> Sodium Hypochlorite</span>
+    <span class="marquee__item"><i>CaCO₃</i> Calcium Carbonate</span>
+    <span class="marquee__item"><i>CPW</i> Chlorinated Paraffin Wax</span>
+    <span class="marquee__item"><i>Sp</i> SAMSOF PSS</span>
+    <span class="marquee__item"><i>St</i> SAMPER STB</span>
+    <span class="marquee__item"><i>Wf</i> SAMWET BLF</span>
+  </div>
+</div>
+
+<section class="section section--mist" aria-labelledby="products-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Our products</p>
+        <h2 class="h2" id="products-title">Three product families. <em>One</em> trusted source.</h2>
+      </div>
+      <p class="muted">{{product_count}} products — from bulk chlor-alkali chemicals to Samuda&rsquo;s own performance range of textile auxiliaries and calcium carbonate fillers.</p>
+    </div>
+    <div class="cgrid">
+{{category_cards}}
+    </div>
+    <div class="section-head reveal" style="margin:88px 0 28px">
+      <div><p class="eyebrow">From our production line</p><h2 class="h2" style="font-size:clamp(1.7rem,2.6vw,2.3rem)">The Samuda <em>signature</em> range</h2></div>
+      <a class="link-arrow" href="products.html">Full catalogue {{icon:arrow}}</a>
+    </div>
+    <div class="gallery">{{product_gallery}}</div>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="ind-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Industries we serve</p>
+        <h2 class="h2" id="ind-title">Built for the sectors that <em>move</em> the economy.</h2>
+      </div>
+      <a class="btn btn--ghost" href="industries.html">Explore Industries {{icon:arrow}}</a>
+    </div>
+    <div class="panels">
+      <article class="panel panel--textile is-active reveal" tabindex="0">
+        <span class="panel__num">01</span>{{icon:thread:panel__icon}}
+        <h3>Textile &amp; Garments</h3>
+        <div class="panel__body"><p>Bleaching, scouring, dyeing and finishing chemistry for knit, woven and denim processing.</p><a class="link-arrow" href="industries.html#textile">Textile solutions {{icon:arrow}}</a></div>
+      </article>
+      <article class="panel panel--paper reveal" style="--d:80ms" tabindex="0">
+        <span class="panel__num">02</span>{{icon:doc:panel__icon}}
+        <h3>Paper &amp; Pulp</h3>
+        <div class="panel__body"><p>Bleaching, brightening and filler chemicals for pulp and paper manufacturing.</p><a class="link-arrow" href="industries.html#paper">Paper solutions {{icon:arrow}}</a></div>
+      </article>
+      <article class="panel panel--water reveal" style="--d:160ms" tabindex="0">
+        <span class="panel__num">03</span>{{icon:drop:panel__icon}}
+        <h3>Water Treatment</h3>
+        <div class="panel__body"><p>Disinfection, pH control and regeneration chemicals for municipal and industrial water.</p><a class="link-arrow" href="industries.html#water">Water solutions {{icon:arrow}}</a></div>
+      </article>
+      <article class="panel panel--other reveal" style="--d:240ms" tabindex="0">
+        <span class="panel__num">04</span>{{icon:gear:panel__icon}}
+        <h3>Other Manufacturing</h3>
+        <div class="panel__body"><p>Plastics, footwear, soaps and detergents, and general chemical processing.</p><a class="link-arrow" href="industries.html#other">Manufacturing solutions {{icon:arrow}}</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="plants-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Our plants</p><h2 class="h2" id="plants-title">An integrated complex on the <em>Meghna</em>.</h2></div>
+      <p class="muted">Chlor-alkali, hydrogen peroxide and calcium carbonate plants at Gazaria, Munshiganj — powered by our own 28.19 MW station.</p>
+    </div>
+    <div class="plants-show">
+      <a class="pshow reveal" href="plants.html#chlor-alkali"><img src="assets/img/plants/chlorine-plant.webp" alt="Samuda chlorine plant" loading="lazy">{{icon:arrow}}<span class="pshow__body"><small>01 · Chlor-Alkali</small><strong>Caustic soda, chlorine &amp; HCl</strong><span>Ion-exchange membrane electrolysis</span></span></a>
+      <a class="pshow reveal" style="--d:80ms" href="plants.html#hydrogen-peroxide"><img src="assets/img/plants/iso-tank.webp" alt="Samuda ISO tank for hydrogen peroxide" loading="lazy">{{icon:arrow}}<span class="pshow__body"><small>02 · Hydrogen Peroxide</small><strong>Up to 250 MT/day</strong></span></a>
+      <a class="pshow reveal" style="--d:160ms" href="plants.html#calcium-carbonate"><img src="assets/img/plants/caco3-plant.webp" alt="Samuda calcium carbonate plant" loading="lazy">{{icon:arrow}}<span class="pshow__body"><small>03 · Calcium Carbonate</small><strong>Coated &amp; uncoated</strong></span></a>
+      <a class="pshow reveal" style="--d:240ms" href="plants.html#samuda-power"><img src="assets/img/plants/power-plant.webp" alt="Samuda Power engine hall" loading="lazy">{{icon:arrow}}<span class="pshow__body"><small>04 · Samuda Power</small><strong>28.19 MW captive power</strong></span></a>
+      <a class="pshow reveal" style="--d:320ms" href="plants.html#hydrogen-peroxide"><img src="assets/img/plants/h2o2-jars.webp" alt="Hydrogen peroxide jars ready for dispatch" loading="lazy">{{icon:arrow}}<span class="pshow__body"><small>Dispatch</small><strong>Jars, drums &amp; ISO tanks</strong></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--mist" aria-labelledby="mfg-title">
+  <div class="container split">
+    <div class="frame-stack reveal">
+      <div class="frame frame--tall">
+        <img src="assets/img/plants/chlorine-plant.webp" alt="Process vessels at the Samuda chlorine plant" loading="lazy">
+      </div>
+      <div class="frame frame--small">
+        <img src="assets/img/plants/qc-lab.webp" alt="Samuda quality-control chemist testing a sample in the laboratory" loading="lazy">
+      </div>
+      <div class="badge-float">{{icon:microscope}}<div><strong>In-house laboratory</strong><span>Batch testing &amp; QC</span></div></div>
+    </div>
+    <div class="reveal" style="--d:120ms">
+      <p class="eyebrow">Manufacturing &amp; quality</p>
+      <h2 class="h2" id="mfg-title">Precision in every <em>batch</em>.</h2>
+      <p class="lead-text">Our production is supported by laboratory testing at every critical stage — from incoming raw materials to the finished product leaving our gates.</p>
+      <ul class="feature-list">
+        <li>{{icon:factory}}<div><strong>Integrated production</strong><span>Process plant, storage and packaging at our Gazaria facility.</span></div></li>
+        <li>{{icon:microscope}}<div><strong>Quality control</strong><span>Raw-material, in-process and finished-goods testing.</span></div></li>
+        <li>{{icon:shield}}<div><strong>Safety first</strong><span>Trained teams, documented procedures and safe handling.</span></div></li>
+      </ul>
+      <div class="hero__actions"><a class="btn btn--outline" href="plants.html">Explore Our Plants {{icon:arrow}}</a><a class="link-arrow" href="manufacturing.html">Manufacturing &amp; QC {{icon:arrow}}</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="about-title">
+  <div class="container split split--rev">
+    <div class="reveal">
+      <ul class="facts">
+        <li>{{icon:clock}}<div><small>Established</small><strong>2006</strong></div></li>
+        <li>{{icon:users}}<div><small>Group</small><strong>A concern of T.K. Group, Bangladesh</strong></div></li>
+        <li>{{icon:pin}}<div><small>Head office</small><strong>T.K. Bhaban, 13 Karwan Bazar, Dhaka-1215</strong></div></li>
+        <li>{{icon:factory}}<div><small>Factory</small><strong>Sikirgaon, Gazaria, Munshiganj</strong></div></li>
+      </ul>
+    </div>
+    <div class="reveal" style="--d:120ms">
+      <p class="eyebrow">About Samuda</p>
+      <h2 class="h2" id="about-title">A Bangladeshi manufacturer with a <em>long-term</em> view.</h2>
+      <p class="lead-text">Samuda Chemical Complex Limited (SCCL) is an industrial chemical manufacturer and a member of T.K. Group. We focus on delivering dependable products, responsive service and technical know-how to customers in Bangladesh and international markets.</p>
+      <p>Our people are protected by a documented framework of 54 policies — from labour rights and equal pay to health, safety and anti-corruption.</p>
+      <div class="hero__actions"><a class="btn btn--outline" href="about.html">Learn More {{icon:arrow}}</a><a class="link-arrow" href="policies.html">Company policies {{icon:arrow}}</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="reach-title">
+  <div class="container reach">
+    <div class="reveal">
+      <p class="eyebrow">Global presence</p>
+      <h2 class="h2" id="reach-title">From Bangladesh to the <em>world</em>.</h2>
+      <div class="big-stat"><span class="big-stat__n"><span data-count="30">30</span><sup>+</sup></span><span class="big-stat__l">countries reached through our export business</span></div>
+      <p>We serve customers across Asia, Africa, Europe and beyond, supported by export documentation and logistics coordination from our Dhaka head office.</p>
+      <a class="link-arrow" href="global-reach.html">Our global reach {{icon:arrow}}</a>
+    </div>
+    <div class="reach__map reveal" style="--d:150ms" aria-hidden="true">
+      <svg viewBox="0 0 560 560">
+        <circle class="ring ring--solid" cx="280" cy="280" r="270"/>
+        <circle class="ring" cx="280" cy="280" r="200"/>
+        <circle class="ring" cx="280" cy="280" r="130"/>
+        <circle class="ring" cx="280" cy="280" r="60"/>
+        <path class="arc" d="M280 280 Q 200 120 90 140"/>
+        <path class="arc" d="M280 280 Q 360 140 470 120"/>
+        <path class="arc" d="M280 280 Q 140 330 110 430"/>
+        <path class="arc" d="M280 280 Q 420 360 450 440"/>
+        <path class="arc" d="M280 280 Q 300 420 250 500"/>
+        <circle class="pulse" cx="280" cy="280" r="8"/>
+        <circle class="hub" cx="280" cy="280" r="7"/>
+        <circle class="node" cx="90" cy="140" r="5"/><circle class="node" cx="470" cy="120" r="5"/><circle class="node" cx="110" cy="430" r="5"/><circle class="node" cx="450" cy="440" r="5"/><circle class="node" cx="250" cy="500" r="5"/>
+        <text x="296" y="276">Dhaka</text><text class="sub" x="296" y="296">Head office</text>
+        <text x="40" y="118">Europe</text>
+        <text x="420" y="98">East Asia</text>
+        <text x="40" y="462">Africa</text>
+        <text x="400" y="474">South-East Asia</text>
+        <text x="200" y="534">South Asia</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Looking for the right <em>chemical solution</em>?</h2>
+        <p>Tell us about your process, volumes and delivery location. Our sales and technical team will get back to you with a tailored quotation.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="contact.html#rfq">Request a Quote {{icon:arrow}}</a>
+        <a class="btn btn--ghost" href="contact.html#general">Contact Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,121 @@
+<!--
+title: Careers
+description: Build your career at Samuda Chemical Complex Limited. Explore opportunities in manufacturing, laboratory, engineering, sales and corporate functions.
+nav: careers
+-->
+<section class="page-hero">
+  <div class="page-hero__bg" style="background-image:url(assets/img/lab-1280.webp)" aria-hidden="true"></div>
+  <div class="container page-hero__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Careers</span></nav>
+    <p class="eyebrow eyebrow--light">Careers</p>
+    <h1 class="page-hero__title reveal-words">Build your future in <em>chemistry</em>.</h1>
+    <p class="page-hero__lead reveal">Join a team that makes the products Bangladeshi industry relies on — and grow your skills in a safe, professional environment.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Why Samuda</p><h2 class="h2">A place to <em>grow</em>.</h2></div>
+      <p class="muted">We look for curious, careful and committed people across plant operations, laboratory, engineering, sales and support functions.</p>
+    </div>
+    <div class="cards-4">
+      <article class="icard reveal">{{icon:shield}}<h3>Safety culture</h3><p>Training and procedures that put people first.</p></article>
+      <article class="icard reveal" style="--d:80ms">{{icon:microscope}}<h3>Technical learning</h3><p>Hands-on experience in production and quality.</p></article>
+      <article class="icard reveal" style="--d:160ms">{{icon:users}}<h3>Strong teams</h3><p>Colleagues who support each other to do great work.</p></article>
+      <article class="icard reveal" style="--d:240ms">{{icon:spark}}<h3>Group strength</h3><p>Part of T.K. Group, with opportunities to develop.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--mist" id="apply">
+  <div class="container form-shell">
+    <div>
+      <div class="empty-state reveal" style="margin:0 0 32px;max-width:none;text-align:left;padding:40px">
+        {{icon:clock:ico}}
+        <h2>No open positions listed right now</h2>
+        <p class="muted" style="margin:0">New vacancies will be published here. You are welcome to submit a general application and we will keep your CV on file for suitable roles.</p>
+      </div>
+      <div class="form-card">
+        <h2 class="h3" style="font-size:1.6rem;margin-bottom:24px">General application</h2>
+        <form data-form data-prefix="CV" data-success="success-cv" data-endpoint="" novalidate>
+          <div class="form-alert" role="alert"></div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="c-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-name" name="name" type="text" autocomplete="name" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-email" name="email" type="email" autocomplete="email" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="c-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-phone" name="phone" type="tel" autocomplete="tel" required data-phone data-msg="Please enter a valid phone number.">
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="c-area">Area of interest <span class="req" aria-hidden="true">*</span></label>
+              <select id="c-area" name="area" required>
+                <option value="">Select…</option>
+                <option>Plant operations</option>
+                <option>Laboratory &amp; quality</option>
+                <option>Engineering &amp; maintenance</option>
+                <option>Sales &amp; marketing</option>
+                <option>Supply chain &amp; logistics</option>
+                <option>Finance &amp; administration</option>
+              </select>
+              <span class="field__error"></span>
+            </div>
+            <div class="field field--full">
+              <span class="field__label" style="font-size:13.5px;font-weight:700;color:var(--ink)">CV / résumé <span class="req" aria-hidden="true">*</span></span>
+              <label class="file-drop" for="c-cv">
+                {{icon:doc}}
+                <div><strong data-file-label>Upload your CV</strong><span>PDF or Word, up to 5 MB</span></div>
+                <input id="c-cv" name="cv" type="file" accept=".pdf,.doc,.docx" data-max-mb="5" required data-msg="Please attach your CV.">
+              </label>
+              <span class="field__error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="c-msg">Cover note <span class="opt">(optional)</span></label>
+              <textarea id="c-msg" name="message"></textarea>
+            </div>
+            <div class="field field--full">
+              <label class="consent"><input type="checkbox" name="consent" required data-msg="Please agree to continue."> <span>I agree that Samuda Chemical may store and process my application for recruitment purposes, as described in the <a href="privacy.html">Privacy Policy</a>.</span></label>
+              <span class="field__error"></span>
+            </div>
+          </div>
+          <div class="form-foot">
+            <p>We only contact shortlisted candidates.</p>
+            <button class="btn btn--primary" type="submit">Submit Application {{icon:arrow}}</button>
+          </div>
+        </form>
+        <div class="success" id="success-cv" role="status">
+          <div class="success__icon">{{icon:check}}</div>
+          <h3>Application received.</h3>
+          <p class="muted">Your reference number:</p>
+          <span class="success__ref" data-ref></span>
+          <p class="muted">Thank you for your interest in Samuda Chemical.</p>
+          <button class="btn btn--outline" type="button" data-form-reset>Submit another application</button>
+        </div>
+      </div>
+    </div>
+    <aside class="contact-aside">
+      <div class="contact-box">
+        <h3>Applicant privacy</h3>
+        <p>Your application is used only for recruitment. We keep CVs securely and for a limited period, and you can ask us to delete your data at any time.</p>
+        <p style="margin:0"><a href="privacy.html">Read the Privacy Policy</a></p>
+      </div>
+      <div class="contact-box contact-box--light">
+        <h3>Recruitment process</h3>
+        <ol class="steps-mini">
+          <li>Submit your application online.</li>
+          <li>Shortlisted candidates are contacted for interview.</li>
+          <li>Successful candidates receive a formal offer.</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>

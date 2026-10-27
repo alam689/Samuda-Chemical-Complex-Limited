@@ -1,0 +1,204 @@
+<!--
+title: Contact & Request a Quote
+description: Contact Samuda Chemical Complex Limited or request a quotation for industrial chemicals, textile auxiliaries, specialty and water-treatment chemicals.
+nav: contact
+-->
+<section class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true"></div>
+  <div class="container page-hero__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+    <p class="eyebrow eyebrow--light">Contact &amp; inquiries</p>
+    <h1 class="page-hero__title reveal-words">Let&rsquo;s talk <em>chemistry</em>.</h1>
+    <p class="page-hero__lead reveal">Request a quotation or send us a general inquiry. Every submission receives a reference number, and our team will respond as soon as possible.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:64px" id="rfq">
+  <div class="container form-shell">
+    <div class="form-card">
+      <div class="tabs" role="tablist" aria-label="Inquiry type" data-tabs>
+        <button class="tab" type="button" role="tab" id="tab-rfq" aria-controls="panel-rfq" aria-selected="true" data-hash="rfq">Request a Quote</button>
+        <button class="tab" type="button" role="tab" id="tab-general" aria-controls="panel-general" aria-selected="false" tabindex="-1" data-hash="general">General Inquiry</button>
+      </div>
+
+      <!-- ===== RFQ ===== -->
+      <div id="panel-rfq" role="tabpanel" aria-labelledby="tab-rfq">
+        <form data-form data-prefix="RFQ" data-success="success-rfq" data-needs-products data-endpoint="" novalidate>
+          <div class="form-alert" role="alert"></div>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="rfq-pick">Products of interest <span class="req" aria-hidden="true">*</span></label>
+              <select id="rfq-pick" data-pick-select aria-describedby="rfq-pick-hint">
+                <option value="">Add a product…</option>
+                {{product_options}}
+              </select>
+              <div class="picked" data-picked aria-live="polite"></div>
+              <input type="hidden" name="products" data-picked-input>
+              <span class="field__hint" id="rfq-pick-hint">You can also add products from the <a href="products.html" style="color:var(--green);text-decoration:underline">catalogue</a>.</span>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="rfq-name">Contact name <span class="req" aria-hidden="true">*</span></label>
+              <input id="rfq-name" name="name" type="text" autocomplete="name" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="rfq-company">Company name <span class="req" aria-hidden="true">*</span></label>
+              <input id="rfq-company" name="company" type="text" autocomplete="organization" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="rfq-email">Business email <span class="req" aria-hidden="true">*</span></label>
+              <input id="rfq-email" name="email" type="email" autocomplete="email" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="rfq-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+              <input id="rfq-phone" name="phone" type="tel" autocomplete="tel" required data-phone data-msg="Please enter a valid phone number, e.g. +880 1XXX-XXXXXX.">
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="rfq-country">Country <span class="req" aria-hidden="true">*</span></label>
+              <input id="rfq-country" name="country" type="text" autocomplete="country-name" value="Bangladesh" required>
+              <span class="field__error"></span>
+            </div>
+            <fieldset class="field">
+              <legend>Preferred contact method</legend>
+              <div class="radio-row" style="margin-top:8px">
+                <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+                <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+                <label><input type="radio" name="contactMethod" value="whatsapp"> WhatsApp</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="rfq-grade">Grade / concentration <span class="opt">(if known)</span></label>
+              <input id="rfq-grade" name="grade" type="text" placeholder="e.g. 50%">
+            </div>
+            <div class="field">
+              <label for="rfq-qty">Estimated quantity <span class="req" aria-hidden="true">*</span></label>
+              <div class="inline-row">
+                <input id="rfq-qty" name="quantity" type="number" min="1" step="any" required>
+                <label class="sr-only" for="rfq-unit">Unit</label>
+                <select id="rfq-unit" name="unit"><option>kg</option><option selected>MT</option><option>Litres</option><option>Drums</option><option>IBCs</option></select>
+              </div>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="rfq-app">Intended application</label>
+              <input id="rfq-app" name="application" type="text" placeholder="e.g. Cotton knit bleaching">
+            </div>
+            <div class="field">
+              <label for="rfq-location">Delivery location <span class="req" aria-hidden="true">*</span></label>
+              <input id="rfq-location" name="deliveryLocation" type="text" placeholder="City / port" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="rfq-message">Message</label>
+              <textarea id="rfq-message" name="message" placeholder="Packaging preferences, delivery schedule, documents required…"></textarea>
+            </div>
+            <div class="field field--full">
+              <label class="consent"><input type="checkbox" name="consent" required data-msg="Please agree so we can respond to your request."> <span>I agree that Samuda Chemical may use these details to respond to my request, as described in the <a href="privacy.html">Privacy Policy</a>.</span></label>
+              <span class="field__error"></span>
+            </div>
+          </div>
+          <div class="form-foot">
+            <p>Fields marked <span style="color:var(--danger)">*</span> are required.</p>
+            <button class="btn btn--primary" type="submit">Submit Request {{icon:arrow}}</button>
+          </div>
+        </form>
+        <div class="success" id="success-rfq" role="status">
+          <div class="success__icon">{{icon:check}}</div>
+          <h3>Thank you — request received.</h3>
+          <p class="muted">Please keep your reference number for any follow-up.</p>
+          <span class="success__ref" data-ref></span>
+          <p class="muted">Our sales team will review your requirement and contact you shortly.</p>
+          <button class="btn btn--outline" type="button" data-form-reset>Submit another request</button>
+        </div>
+      </div>
+
+      <!-- ===== General ===== -->
+      <div id="panel-general" role="tabpanel" aria-labelledby="tab-general" hidden>
+        <form data-form data-prefix="INQ" data-success="success-general" data-endpoint="" novalidate>
+          <div class="form-alert" role="alert"></div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="g-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input id="g-name" name="name" type="text" autocomplete="name" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="g-company">Company <span class="opt">(optional)</span></label>
+              <input id="g-company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="g-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="g-email" name="email" type="email" autocomplete="email" required>
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="g-phone">Phone <span class="opt">(optional)</span></label>
+              <input id="g-phone" name="phone" type="tel" autocomplete="tel" data-phone data-msg="Please enter a valid phone number.">
+              <span class="field__error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="g-topic">Topic <span class="req" aria-hidden="true">*</span></label>
+              <select id="g-topic" name="topic" required>
+                <option value="">Select a topic…</option>
+                <option>Product information</option>
+                <option>Technical support</option>
+                <option>Export inquiry</option>
+                <option>Supplier / partnership</option>
+                <option>Media</option>
+                <option>Other</option>
+              </select>
+              <span class="field__error"></span>
+            </div>
+            <div class="field field--full">
+              <label for="g-message">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="g-message" name="message" required minlength="10"></textarea>
+              <span class="field__error"></span>
+            </div>
+            <div class="field field--full">
+              <label class="consent"><input type="checkbox" name="consent" required data-msg="Please agree so we can respond to your message."> <span>I agree that Samuda Chemical may use these details to respond to my message, as described in the <a href="privacy.html">Privacy Policy</a>.</span></label>
+              <span class="field__error"></span>
+            </div>
+          </div>
+          <div class="form-foot">
+            <p>Fields marked <span style="color:var(--danger)">*</span> are required.</p>
+            <button class="btn btn--primary" type="submit">Send Message {{icon:arrow}}</button>
+          </div>
+        </form>
+        <div class="success" id="success-general" role="status">
+          <div class="success__icon">{{icon:check}}</div>
+          <h3>Thank you — message sent.</h3>
+          <p class="muted">Your reference number:</p>
+          <span class="success__ref" data-ref></span>
+          <p class="muted">We will get back to you as soon as possible.</p>
+          <button class="btn btn--outline" type="button" data-form-reset>Send another message</button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="contact-aside" id="offices">
+      <div class="contact-box">
+        <h3>Head Office</h3>
+        <address>T.K. Bhaban, 13 Karwan Bazar<br>Dhaka-1215, Bangladesh</address>
+        <p><a href="mailto:info@scclbd.com">info@scclbd.com</a></p>
+        <p style="margin:0"><a href="https://www.google.com/maps/search/?api=1&amp;query=T.K.+Bhaban+Karwan+Bazar+Dhaka" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <div class="contact-box contact-box--light">
+        <h3>Factory</h3>
+        <address>Sikirgaon, Gazaria<br>Munshiganj, Bangladesh</address>
+        <p style="margin:0" class="muted">Site visits by appointment only.</p>
+      </div>
+      <div class="contact-box contact-box--light">
+        <h3>What happens next?</h3>
+        <ol class="steps-mini">
+          <li>You receive a reference number instantly.</li>
+          <li>Your request is assigned to a sales specialist.</li>
+          <li>We contact you to confirm details and share a quotation.</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>

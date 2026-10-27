@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add("js")</script>
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="https://www.scclbd.com/{{path}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Samuda Chemical Complex Limited">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="https://www.scclbd.com/assets/img/aerial-1920.webp">
+  <meta name="theme-color" content="#0B2645">
+  <link rel="icon" href="{{root}}assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  {{head_extra}}
+  <link rel="stylesheet" href="{{root}}assets/css/styles.css">
+</head>
+<body class="{{bodyclass}}">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="utility" role="region" aria-label="Quick contact">
+    <div class="container utility__inner">
+      <p class="utility__note">A concern of T.K. Group · Manufacturing in Bangladesh since 2006</p>
+      <ul class="utility__links">
+        <li><a href="mailto:info@scclbd.com">{{icon:mail}}<span>info@scclbd.com</span></a></li>
+        <li><a href="{{root}}contact.html#offices">{{icon:pin}}<span>Karwan Bazar, Dhaka</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="{{root}}index.html" aria-label="Samuda Chemical Complex Limited — home">
+        {{logo}}
+      </a>
+
+      <nav class="nav" aria-label="Main" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--drop nav__item--mega" data-nav-key="about">
+            <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-company">Company {{icon:chevron}}</button>
+            <div class="dropdown dropdown--mega" id="menu-company">
+              {{company_menu}}
+            </div>
+          </li>
+          <li class="nav__item nav__item--drop nav__item--mega" data-nav-key="products">
+            <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-products">Products {{icon:chevron}}</button>
+            <div class="dropdown dropdown--mega" id="menu-products">
+              {{mega_menu}}
+            </div>
+          </li>
+          <li class="nav__item nav__item--drop nav__item--mega" data-nav-key="plants">
+            <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-plants">Our Plants {{icon:chevron}}</button>
+            <div class="dropdown dropdown--mega" id="menu-plants">
+              {{plants_menu}}
+            </div>
+          </li>
+          <li class="nav__item" data-nav-key="industries"><a class="nav__link" href="{{root}}industries.html">Industries</a></li>
+          <li class="nav__item" data-nav-key="careers"><a class="nav__link" href="{{root}}careers.html">Careers</a></li>
+          <li class="nav__item" data-nav-key="contact"><a class="nav__link" href="{{root}}contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="inquiry-pill" href="{{root}}contact.html#rfq" aria-label="Inquiry list" data-basket-link>
+          {{icon:doc}}<span class="inquiry-pill__count" data-basket-count>0</span>
+        </a>
+        <a class="btn btn--primary btn--sm header-cta" href="{{root}}contact.html#rfq">Request a Quote {{icon:arrow}}</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="drawer" data-menu-toggle>
+          <span class="sr-only">Open menu</span><span class="menu-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <nav class="drawer__nav" aria-label="Mobile">
+      <a href="{{root}}index.html">Home</a>
+      <a href="{{root}}about.html">About Samuda</a>
+      <a href="{{root}}products.html">Products</a>
+      <a href="{{root}}industries.html">Industries</a>
+      <a href="{{root}}plants.html">Our Plants</a>
+      <a href="{{root}}manufacturing.html">Manufacturing</a>
+      <a href="{{root}}quality-sustainability.html">Quality &amp; Sustainability</a>
+      <a href="{{root}}global-reach.html">Global Reach</a>
+      <a href="{{root}}policies.html">Company Policies</a>
+      <a href="{{root}}news.html">News</a>
+      <a href="{{root}}careers.html">Careers</a>
+      <a href="{{root}}contact.html">Contact</a>
+    </nav>
+    <a class="btn btn--primary btn--block" href="{{root}}contact.html#rfq">Request a Quote {{icon:arrow}}</a>
+  </div>
+
+  <main id="main" tabindex="-1">
+{{content}}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__cta">
+        <h2 class="footer__cta-title">Let&rsquo;s build something <em>remarkable</em> together.</h2>
+        <a class="btn btn--light" href="{{root}}contact.html">Talk to our team {{icon:arrow}}</a>
+      </div>
+      <div class="footer__grid">
+        <div class="footer__brand">
+          {{logo_light}}
+          <p>Samuda Chemical Complex Limited — a concern of T.K. Group — is one of the largest caustic soda and hydrogen peroxide producers in Bangladesh.</p>
+        </div>
+        <div>
+          <h3 class="footer__h">Company</h3>
+          <ul>
+            <li><a href="{{root}}about.html">About Samuda</a></li>
+            <li><a href="{{root}}plants.html">Our Plants</a></li>
+            <li><a href="{{root}}manufacturing.html">Manufacturing</a></li>
+            <li><a href="{{root}}quality-sustainability.html">Quality &amp; Sustainability</a></li>
+            <li><a href="{{root}}global-reach.html">Global Reach</a></li>
+            <li><a href="{{root}}policies.html">Company Policies</a></li>
+            <li><a href="{{root}}news.html">News</a></li>
+            <li><a href="{{root}}careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__h">Products</h3>
+          <ul>
+            {{footer_categories}}
+            <li><a href="{{root}}industries.html">Industries we serve</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__h">Get in touch</h3>
+          <address>
+            <strong>Head Office</strong><br>
+            T.K. Bhaban, 13 Karwan Bazar<br>Dhaka-1215, Bangladesh
+          </address>
+          <address>
+            <strong>Factory</strong><br>
+            Sikirgaon, Gazaria<br>Munshiganj, Bangladesh
+          </address>
+          <p><a href="mailto:info@scclbd.com">info@scclbd.com</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; {{year}} Samuda Chemical Complex Limited. All rights reserved.</p>
+        <ul>
+          <li><a href="{{root}}privacy.html">Privacy Policy</a></li>
+          <li><a href="{{root}}contact.html">Contact</a></li>
+          <li><a href="#main" data-to-top>Back to top &uarr;</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+  <script src="{{root}}assets/js/main.js" defer></script>
+</body>
+</html>

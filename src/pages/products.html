@@ -1,0 +1,66 @@
+<!--
+title: Products
+description: Browse Samuda Chemical's catalogue of basic industrial chemicals, textile auxiliaries, specialty chemicals and water-treatment chemicals. Search, filter and request a quote.
+nav: products
+-->
+<section class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true"></div>
+  <div class="container page-hero__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Products</span></nav>
+    <p class="eyebrow eyebrow--light">Product catalogue</p>
+    <h1 class="page-hero__title reveal-words">Find the <em>right</em> chemistry.</h1>
+    <p class="page-hero__lead reveal">Search our range by name or filter by product family and industry. Add products to your inquiry list and request a single consolidated quotation.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container" data-catalogue>
+    <div class="toolbar" role="search">
+      <div class="toolbar__row">
+        <div class="search">
+          {{icon:search}}
+          <label class="sr-only" for="q">Search products</label>
+          <input id="q" type="search" placeholder="Search by product name or formula, e.g. H₂O₂" autocomplete="off" data-search>
+        </div>
+        <div>
+          <label class="sr-only" for="industry">Filter by industry</label>
+          <select id="industry" data-filter-industry>
+            <option value="">All industries</option>
+            {{industry_options}}
+          </select>
+        </div>
+      </div>
+      <div class="chips" aria-label="Filter by product family">
+        <button class="chip" type="button" data-filter-all aria-pressed="true">All products</button>
+        {{category_filters}}
+      </div>
+    </div>
+
+    <div class="result-meta" style="margin-bottom:20px">
+      <span aria-live="polite" data-result-count></span>
+      <button type="button" data-reset>Clear filters</button>
+    </div>
+
+    <div class="pgrid">
+{{products_grid}}
+    </div>
+
+    <div class="empty" data-empty>
+      {{icon:search}}
+      <h2 class="h3">No products match your search</h2>
+      <p class="muted">Try a different name, or tell us what you need — we may still be able to help.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn--outline" type="button" data-reset>Clear filters</button>
+        <a class="btn btn--primary" href="contact.html#rfq">Ask our team {{icon:arrow}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--mist section--tight">
+  <div class="container cards-3">
+    <article class="icard reveal">{{icon:doc}}<h3>Technical documents</h3><p>Technical Data Sheets and Safety Data Sheets are available on request for each product and grade.</p></article>
+    <article class="icard reveal" style="--d:80ms">{{icon:box}}<h3>Grades &amp; packaging</h3><p>Concentrations, grades and pack sizes vary by product. Share your requirement and we will advise.</p></article>
+    <article class="icard reveal" style="--d:160ms">{{icon:users}}<h3>Technical support</h3><p>Not sure which product suits your process? Our team will help you choose.</p></article>
+  </div>
+</section>
