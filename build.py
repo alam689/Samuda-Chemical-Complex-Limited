@@ -256,6 +256,66 @@ def plants_menu(root):
     return f'<div class="mm">{feature}<div class="mm__cols mm__cols--plants">{cards}</div></div>{foot}'
 
 
+# ---------------------------------------------------------------- world map
+# Equirectangular projection cropped to 78°N–56°S; the dotted land layer is drawn
+# in the browser by assets/js/main.js from the same projection.
+MAP_W, MAP_H, MAP_N, MAP_S = 1000, 372, 78, -56
+DHAKA = (90.41, 23.81)
+EXPORT_REGIONS = [
+    # name, lon, lat, label anchor ("start"/"end"), label dx, label dy
+    ("Europe", 12, 49, "end", -14, -10),
+    ("Africa", 21, 3, "end", -14, 22),
+    ("East Asia", 118, 34, "start", 14, -8),
+    ("South-East Asia", 105, 5, "start", 14, 22),
+    ("South Asia", 77, 14, "middle", 0, 30),
+]
+
+
+def proj(lon, lat):
+    return (lon + 180) / 360 * MAP_W, (MAP_N - lat) / (MAP_N - MAP_S) * MAP_H
+
+
+def world_map():
+    hx, hy = proj(*DHAKA)
+    arcs, nodes, labels = [], [], []
+    for i, (name, lon, lat, anchor, dx, dy) in enumerate(EXPORT_REGIONS):
+        x, y = proj(lon, lat)
+        dist = ((x - hx) ** 2 + (y - hy) ** 2) ** 0.5
+        cx, cy = (x + hx) / 2, min(y, hy) - dist * 0.42 - 10
+        d = f"M{hx:.1f} {hy:.1f} Q{cx:.1f} {cy:.1f} {x:.1f} {y:.1f}"
+        dur = 2.6 + i * 0.35
+        arcs.append(
+            f'<path class="wm__arc" d="{d}" style="--i:{i}"/>'
+            f'<circle class="wm__spark" r="3.2"><animateMotion dur="{dur:.2f}s" begin="{i*0.5:.1f}s" repeatCount="indefinite" path="{d}"/></circle>'
+        )
+        nodes.append(
+            f'<g class="wm__node" style="--i:{i}"><circle class="wm__ring" cx="{x:.1f}" cy="{y:.1f}" r="9"/>'
+            f'<circle class="wm__dot" cx="{x:.1f}" cy="{y:.1f}" r="4.5"/></g>'
+        )
+        labels.append(f'<text class="wm__label" x="{x + dx:.1f}" y="{y + dy:.1f}" text-anchor="{anchor}">{name}</text>')
+    hub = (
+        f'<g class="wm__hub"><circle class="wm__pulse" cx="{hx:.1f}" cy="{hy:.1f}" r="8"/>'
+        f'<circle class="wm__pulse wm__pulse--2" cx="{hx:.1f}" cy="{hy:.1f}" r="8"/>'
+        f'<circle class="wm__hubdot" cx="{hx:.1f}" cy="{hy:.1f}" r="7"/></g>'
+        f'<text class="wm__label wm__label--hub" x="{hx + 14:.1f}" y="{hy - 14:.1f}">Dhaka</text>'
+        f'<text class="wm__sub" x="{hx + 14:.1f}" y="{hy + 1:.1f}">BANGLADESH</text>'
+    )
+    legend = "".join(
+        f'<li><span class="wm__legend-dot"></span>{name}</li>' for name, *_ in EXPORT_REGIONS
+    )
+    return f"""<figure class="wm" data-world-map data-w="{MAP_W}" data-h="{MAP_H}" data-n="{MAP_N}" data-s="{MAP_S}">
+  <svg class="wm__svg" viewBox="0 0 {MAP_W} {MAP_H}" role="img" aria-labelledby="wm-title">
+    <title id="wm-title">World map showing exports from Dhaka, Bangladesh to Europe, Africa, East Asia, South-East Asia and South Asia</title>
+    <g class="wm__land" data-land></g>
+    <g class="wm__arcs">{''.join(arcs)}</g>
+    <g class="wm__nodes">{''.join(nodes)}</g>
+    {hub}
+    <g class="wm__labels">{''.join(labels)}</g>
+  </svg>
+  <figcaption class="wm__legend"><span class="wm__legend-hub">Head office · Dhaka</span><ul>{legend}</ul></figcaption>
+</figure>"""
+
+
 MEGA_TAGLINES = {
     "basic": "Bulk chemicals",
     "performance": "Samuda textile auxiliaries",
@@ -568,6 +628,7 @@ def fill_tokens(text, root):
         "logo_light": logo("logo--light"),
         "mega_menu": mega_menu(root),
         "company_menu": company_menu(root),
+        "world_map": world_map(),
         "plants_menu": plants_menu(root),
         "footer_categories": footer_categories(root),
         "products_grid": products_grid(root),

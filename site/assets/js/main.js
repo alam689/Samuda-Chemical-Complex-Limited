@@ -434,6 +434,70 @@
     pSearch.addEventListener("input", filterPolicies);
   }
 
+  /* ---------------- dotted world map ---------------- */
+  var worldMaps = $$("[data-world-map]");
+  if (worldMaps.length) {
+    var TOPO_JS = "https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js";
+    var LAND_JSON = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json";
+    var loadScript = function (src) {
+      return new Promise(function (resolve, reject) {
+        if (window.topojson) return resolve();
+        var s = document.createElement("script");
+        s.src = src; s.onload = resolve; s.onerror = reject;
+        document.head.appendChild(s);
+      });
+    };
+    var ringContains = function (ring, x, y) {
+      var inside = false;
+      for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        var xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+        if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) inside = !inside;
+      }
+      return inside;
+    };
+    var drawLand = function (land) {
+      var polys = (land.type === "MultiPolygon" ? land.coordinates : [land.coordinates]).map(function (rings) {
+        var minX = 180, maxX = -180, minY = 90, maxY = -90;
+        rings[0].forEach(function (p) { minX = Math.min(minX, p[0]); maxX = Math.max(maxX, p[0]); minY = Math.min(minY, p[1]); maxY = Math.max(maxY, p[1]); });
+        return { rings: rings, box: [minX, maxX, minY, maxY] };
+      });
+      var isLand = function (lon, lat) {
+        for (var k = 0; k < polys.length; k++) {
+          var b = polys[k].box;
+          if (lon < b[0] || lon > b[1] || lat < b[2] || lat > b[3]) continue;
+          if (ringContains(polys[k].rings[0], lon, lat)) {
+            for (var h = 1; h < polys[k].rings.length; h++) if (ringContains(polys[k].rings[h], lon, lat)) return false;
+            return true;
+          }
+        }
+        return false;
+      };
+      worldMaps.forEach(function (fig) {
+        var W = +fig.dataset.w, H = +fig.dataset.h, N = +fig.dataset.n, S = +fig.dataset.s;
+        var step = 2, out = [];
+        for (var lat = N - 1; lat > S; lat -= step) {
+          for (var lon = -179; lon < 180; lon += step) {
+            if (!isLand(lon, lat)) continue;
+            var x = (lon + 180) / 360 * W, y = (N - lat) / (N - S) * H;
+            var bd = lon > 87.5 && lon < 93 && lat > 20 && lat < 27;
+            out.push('<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (bd ? 2.6 : 1.9) +
+              '"' + (bd ? ' class="is-home"' : "") + ' style="--t:' + (x / W * 1.4).toFixed(2) + 's"/>');
+          }
+        }
+        $("[data-land]", fig).innerHTML = out.join("");
+        fig.classList.add("is-drawn");
+      });
+    };
+    // Load the land data straight away; the animations wait for .is-visible (see CSS).
+    Promise.all([loadScript(TOPO_JS), fetch(LAND_JSON).then(function (r) { return r.json(); })])
+      .then(function (res) {
+        var topo = res[1], land = topo.objects.land;
+        drawLand(window.topojson.merge(topo, land.geometries || [land]));
+      })
+      .catch(function () { worldMaps.forEach(function (f) { f.classList.add("is-drawn", "no-land"); }); });
+    if (reduceMotion) $$(".wm animateMotion").forEach(function (a) { a.remove(); });
+  }
+
   /* ---------------- back to top ---------------- */
   $$("[data-to-top]").forEach(function (a) {
     a.addEventListener("click", function (ev) { ev.preventDefault(); window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }); });

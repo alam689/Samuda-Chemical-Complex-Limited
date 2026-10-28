@@ -193,36 +193,19 @@ nav: home
 </section>
 
 <section class="section section--dark" aria-labelledby="reach-title">
-  <div class="container reach">
-    <div class="reveal">
-      <p class="eyebrow">Global presence</p>
-      <h2 class="h2" id="reach-title">From Bangladesh to the <em>world</em>.</h2>
-      <div class="big-stat"><span class="big-stat__n"><span data-count="30">30</span><sup>+</sup></span><span class="big-stat__l">countries reached through our export business</span></div>
-      <p>We serve customers across Asia, Africa, Europe and beyond, supported by export documentation and logistics coordination from our Dhaka head office.</p>
-      <a class="link-arrow" href="global-reach.html">Our global reach {{icon:arrow}}</a>
+  <div class="container">
+    <div class="reach-head">
+      <div class="reveal">
+        <p class="eyebrow">Global presence</p>
+        <h2 class="h2" id="reach-title" style="margin:0">From Bangladesh to the <em>world</em>.</h2>
+      </div>
+      <div class="reveal" style="--d:100ms">
+        <div class="big-stat"><span class="big-stat__n"><span data-count="30">30</span><sup>+</sup></span><span class="big-stat__l">countries reached through our export business</span></div>
+        <p>We serve customers across Asia, Africa, Europe and beyond, with export documentation and logistics coordinated from our Dhaka head office.</p>
+        <a class="link-arrow" href="global-reach.html">Our global reach {{icon:arrow}}</a>
+      </div>
     </div>
-    <div class="reach__map reveal" style="--d:150ms" aria-hidden="true">
-      <svg viewBox="0 0 560 560">
-        <circle class="ring ring--solid" cx="280" cy="280" r="270"/>
-        <circle class="ring" cx="280" cy="280" r="200"/>
-        <circle class="ring" cx="280" cy="280" r="130"/>
-        <circle class="ring" cx="280" cy="280" r="60"/>
-        <path class="arc" d="M280 280 Q 200 120 90 140"/>
-        <path class="arc" d="M280 280 Q 360 140 470 120"/>
-        <path class="arc" d="M280 280 Q 140 330 110 430"/>
-        <path class="arc" d="M280 280 Q 420 360 450 440"/>
-        <path class="arc" d="M280 280 Q 300 420 250 500"/>
-        <circle class="pulse" cx="280" cy="280" r="8"/>
-        <circle class="hub" cx="280" cy="280" r="7"/>
-        <circle class="node" cx="90" cy="140" r="5"/><circle class="node" cx="470" cy="120" r="5"/><circle class="node" cx="110" cy="430" r="5"/><circle class="node" cx="450" cy="440" r="5"/><circle class="node" cx="250" cy="500" r="5"/>
-        <text x="296" y="276">Dhaka</text><text class="sub" x="296" y="296">Head office</text>
-        <text x="40" y="118">Europe</text>
-        <text x="420" y="98">East Asia</text>
-        <text x="40" y="462">Africa</text>
-        <text x="400" y="474">South-East Asia</text>
-        <text x="200" y="534">South Asia</text>
-      </svg>
-    </div>
+    <div class="reveal" style="--d:150ms">{{world_map}}</div>
   </div>
 </section>
 
